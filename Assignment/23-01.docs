@@ -1,0 +1,31 @@
+Q - What is Git
+
+Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+Q - What do you understand by the term ‘Version Control System"
+
+A Version Control System (VCS) is a software tool that helps developers keep track of different versions of their code and manage the collaboration of multiple contributors. It allows developers to save different versions of their codebase, revert to previous versions, and collaborate with other team members.
+
+Q - What is GitHub
+
+GitHub is a web-based platform that provides hosting for software development version control using Git. It allows developers to store and manage their code repositories, track changes, and collaborate with other team members.
+
+Q - Mention some popular Git hosting services
+
+Some popular Git hosting services include GitHub, GitLab, Bitbucket, and SourceForge.
+
+Q - Different types of version control system
+
+There are two main types of version control systems: centralized and distributed. Centralized version control systems (CVCS) have a single repository that acts as a single source of truth, while distributed version control systems (DVCS) like Git have multiple copies of the repository, allowing for offline work and decentralized collaboration.
+
+Q - What benefits come with using Git
+
+Using Git provides benefits such as easy collaboration, version tracking, and easy rollback of code changes. It also makes it easier to maintain different versions of a project and to merge contributions from multiple contributors.
+
+Q - What is a Git repository
+
+A Git repository is a directory where Git stores the metadata and object database for a project. It contains all the files and the complete history of the changes made to these files.
+
+Q - How can you initialize a repository in Git
+
+To initialize a repository in Git, you can use the following command in the terminal: git init. This will create a new Git repository in the current directory.
