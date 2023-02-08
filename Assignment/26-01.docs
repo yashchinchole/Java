@@ -1,0 +1,23 @@
+Q - What is Programming language
+
+A programming language is a formal language used to communicate instructions to a computer or machine.
+
+Q - Why do we need a Programming languag
+
+We need a programming language to provide a set of instructions that the computer can understand and execute. It allows us to build software and automate tasks.
+
+Q - What are the features of Java
+
+Java is a class-based, object-oriented, and high-level programming language that is designed to be portable, secure, and easy to use. Some of its features include automatic memory management, secure execution environment, platform independence, and a large standard library.
+
+Q - What is an Object
+
+An object is an instance of a class, which can be considered as a blueprint for the object. An object has state and behavior, which is represented by its variables and methods.
+
+Q - What is a class
+
+A class is a blueprint or template that defines the state and behavior of objects of a particular type. It encapsulates data and the functions that operate on that data within a single unit.
+
+Q - Explain about the main() method in Java
+
+The main() method in Java is the entry point of a Java program. It is where the execution of the program begins. The main method must be declared as public, static, and void, and it must accept an array of strings as an argument. The signature of the main method is as follows: public static void main(String[] args).
