@@ -1,0 +1,66 @@
+Q - What are the conditional operators in java
+
+The conditional operators in Java are:
+if-then
+if-then-else
+switch-case
+
+Q - What are the types of operators based on the number of operands
+
+Operators in Java can be classified based on the number of operands they take:
+Unary operators: take only one operand (e.g. increment operator ++)
+Binary operators: take two operands (e.g. addition operator +)
+Ternary operators: take three operands (e.g. conditional operator ?:)
+
+Q - What is the use of switch case in java programming
+
+The switch-case statement in Java is used as an alternative to the if-then-else statement when a large number of choices are involved. It allows you to test a single expression against multiple values, and execute the corresponding block of code when a match is found.
+
+Q - What are the priority levels of arithmetic operation in java
+
+The priority levels of arithmetic operations in Java are determined by the operator precedence rules. The order of precedence is as follows, from highest to lowest:
+Parentheses ()
+Unary operators (e.g. ++, --)
+Multiplicative operators (*, /, %)
+Additive operators (+, -)
+
+Q - What are the conditional statements and use of conditional statements in java
+
+Conditional statements in Java allow you to make decisions based on conditions. The main types of conditional statements in Java are:
+if-then
+if-then-else
+switch-case
+Conditional statements are used in Java to execute different blocks of code based on different conditions.
+
+Q - What is the syntax of if else statement
+
+The syntax of an if-else statement in Java is as follows:
+if (condition) {
+// code to be executed if the condition is true
+}
+else {
+// code to be executed if the condition is false
+}
+
+Q - What are the 3 types of iterative statements in java
+
+The three types of iterative statements in Java are:
+for loop
+while loop
+do-while loop
+
+Q - Write the difference between for loop and do while loop
+
+In a for loop, the loop control variable is initialized, tested, and updated before each iteration. The loop continues as long as the test condition is true.
+In a do-while loop, the loop body is executed at least once, and then the test condition is evaluated. The loop continues as long as the test condition is true.
+
+Q - Write a program to print numbers from 1 to 10
+
+Here is a program in Java to print the numbers from 1 to 10:
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+            }
+        }
+}
