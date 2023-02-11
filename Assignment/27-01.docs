@@ -1,0 +1,40 @@
+Q - What is statically typed and dynamically typed programming language
+
+Statically typed programming languages are those in which the data type of a variable must be specified when it is declared and cannot be changed at runtime. Java is an example of a statically typed programming language.
+Dynamically typed programming languages are those in which the data type of a variable can be changed at runtime, and the data type of a variable is determined by the value assigned to it. For example, Python is a dynamically typed programming language.
+
+Q - What is the variable in java
+
+A variable in Java is a location in memory that holds a value and has a name, so that it can be referred to later in the program.
+
+Q - How to assign a value to variable
+
+To assign a value to a variable in Java, you can use the assignment operator (=). For example, if you have declared an integer variable "x", you can assign a value to it like this : x = 10;
+
+Q - What are primitive data types in java
+
+Java has eight primitive data types: byte, short, int, long, float, double, char, and boolean.
+
+Q - What are the identifiers in java
+
+Java identifiers are names given to variables, classes, methods, and other elements in a Java program. An identifier must start with a letter, underscore, or dollar sign, and can contain letters, numbers, and underscores.
+
+Q - List the operators in java
+
+The operators in Java include:
+Arithmetic operators: +, -, *, /, %
+Relational operators: ==, !=, >, <, >=, <=
+Logical operators: &&, ||, !
+Bitwise operators: &, |, ^, ~, <<, >>
+Assignment operators: =, +=, -=, *=, /=, %=
+Conditional operator: ? :
+Instanceof operator: instanceof
+
+Q - Explain about increment and decrement operators and give an examples
+
+Increment and decrement operators are used to increase or decrease the value of a variable by one. The increment operator (++) adds one to a variable, while the decrement operator (--) subtracts one from a variable.
+For example:
+int x = 10;
+x++; // x is now 11
+x--; // x is now 10 again
+The increment and decrement operators can be used in both prefix and postfix forms. In the prefix form, the operator is placed before the variable (e.g. ++x), while in the postfix form, the operator is placed after the variable (e.g. x++). The difference between the two forms is in the order in which the value of the variable is updated.
