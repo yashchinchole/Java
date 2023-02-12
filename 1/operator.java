@@ -14,9 +14,10 @@ public class operator {
         System.out.println(a == b);
 
         if (!(a == 3 || ++b == 3))
-            System.out.println("YUP");
+            System.out.println("YOO");
         else
             System.out.println("NOO");
 
+        System.out.println((a == --b) ? "YOO" : "NOO");
     }
 }
