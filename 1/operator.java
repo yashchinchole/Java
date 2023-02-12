@@ -9,5 +9,14 @@ public class operator {
         System.out.println(a % b);
         System.out.println(a++);
         System.out.println(--b);
+
+        a = (int) ++b;
+        System.out.println(a == b);
+
+        if (!(a == 3 || ++b == 3))
+            System.out.println("YUP");
+        else
+            System.out.println("NOO");
+
     }
 }
