@@ -1,0 +1,77 @@
+Q - Write a Program to print Alphabets A, B, C, D, E, F, G, H using pattern programming logic
+
+public class AlphabetPattern {
+    public static void main(String[] args) {
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char) ('A' + j) + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Q - Write a program to print triangle using star pattern programming logic
+
+public class TrianglePattern {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Q - WAP to print
+
+public class pattern {
+    public static void main(String[] args) {
+
+        int n = 14;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if ((i == 0 || j == 0 || i == n - 1 || j == n - 1)
+                        || ((i <= (n - 1) / 2) && (j <= (n - 1) / 2) && (i + j <= (n - 1) / 2))
+                        || ((i <= (n - 1) / 2) && (j >= (n - 1) / 2 + 1) && (j - i) >= (n - 1) / 2))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Q - Write a program to print PW SKILLS using pattern programming logic
+
+public class PWSKILLSPattern {
+    public static void main(String[] args) {
+        String message = "PW SKILLS";
+        for (int i = 0; i < message.length(); i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(message.charAt(j));
+            }
+            System.out.println();
+        }
+    }
+}
+
+Q - Write a program to print your Full Name using pattern programming logic
+
+import java.util.Scanner;
+public class FullNamePattern {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Name");
+        String fullName = s.nextLine();
+        for (int i = 0; i < fullName.length(); i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(fullName.charAt(j));
+            }
+            System.out.println();
+        }
+        s.close();
+    }
+}
