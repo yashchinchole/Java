@@ -1,0 +1,49 @@
+Q - How to create an object in java
+
+Declare a reference variable of the class type.
+Use the "new" operator to allocate memory for the object.
+Initialize the object using a constructor.
+Here is an example:
+
+class MyClass {
+  int x;
+  
+  public MyClass(int x) {
+    this.x = x;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    MyClass myObj = new MyClass(5);
+    System.out.println(myObj.x);
+  }
+}
+
+Q - What is the use of a new keyword in java
+
+The "new" operator is used to allocate memory for an object in Java. The "new" keyword is followed by the constructor of the class, which is used to initialize the object.
+
+
+Q - What are the different types of variables in java
+
+Local Variables: Variables defined inside a method or block.
+Instance Variables: Variables defined inside a class but outside a method. These are also called member variables or fields.
+Static Variables: Variables that belong to the class and not to a specific instance of the class.
+
+
+Q - What is the difference between instance variable and local variables
+
+Instance variables are defined inside a class but outside a method, while local variables are defined inside a method or block.
+Instance variables have default values, while local variables do not have default values and must be initialized before they can be used.
+Instance variables are accessible from any method of the class, while local variables are only accessible within the method or block in which they are defined.
+
+
+Q - In which area memory is allocated for instance variable and local variable
+
+Instance variables are stored in the heap memory, while local variables are stored in the stack memory. The heap memory is shared by all objects and is used to store objects and their instance variables. The stack memory is used to store local variables and the method call stack.
+
+
+Q - What is method overloading
+
+Method overloading is a feature in Java that allows you to define multiple methods with the same name in a single class, but with different parameters. The Java compiler can then determine which method to call based on the number and type of arguments passed in the method call. Method overloading can make your code more readable and maintainable by allowing you to use the same method name for related operations.
