@@ -1,0 +1,46 @@
+Q - What do you mean by an array
+
+An array is a collection of similar data types in a contiguous memory location.
+
+
+Q - How to create an array
+
+To create an array in Java, you need to declare the type of the array, followed by the square brackets [] and the name of the array. Then, you can use the "new" keyword along with the size of the array to allocate memory for it. For example, int[] arr = new int[10]; creates an integer array of size 10.
+
+
+Q - Can we change the size of an array at run time
+
+No, the size of an array cannot be changed at runtime in Java. Once an array is created, its size is fixed.
+
+
+Q - Can you declare an array without assigning the size of an array
+
+Yes, you can declare an array without assigning the size of the array. For example, int[] arr; declares an integer array named "arr" but does not allocate memory for it.
+
+
+Q - What is the default value of array
+
+The default value of an array depends on its data type. For numeric types like int and double, the default value is 0. For boolean, the default value is false, and for object types, the default value is null.
+
+
+Q - What is a 1D array with an example
+
+A 1D array is an array that contains elements of the same data type arranged in a single row. For example, int[] arr = {1, 2, 3, 4, 5}; is a 1D integer array that contains 5 elements.
+
+
+Q - Write a program on a 2D array
+
+Here's an example program that demonstrates the use of a 2D array:
+
+public class TwoDArrayExample {
+   public static void main(String[] args) {
+      int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; // 2D integer array
+      for (int i = 0; i < 3; i++) {
+         for (int j = 0; j < 3; j++) {
+            System.out.print(arr[i][j] + " ");
+         }
+         System.out.println();
+      }
+   }
+}
+This program initializes a 2D integer array with 3 rows and 3 columns, and then prints its elements to the console.
