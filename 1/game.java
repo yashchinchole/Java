@@ -1,87 +1,88 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Guesser {
+// class Guesser {
 
-    int gNumber;
+// int gNumber;
 
-    public int getNumber() {
+// public int getNumber() {
 
-        Scanner s1 = new Scanner(System.in);
-        System.out.println("Enter Guesser Number");
-        gNumber = s1.nextInt();
+// Scanner s1 = new Scanner(System.in);
+// System.out.println("Enter Guesser Number");
+// gNumber = s1.nextInt();
 
-        return gNumber;
-    }
+// return gNumber;
+// }
 
-}
+// }
 
-class Player {
+// class Player {
 
-    int pNumber;
+// int pNumber;
 
-    public int getNumber() {
+// public int getNumber() {
 
-        Scanner s2 = new Scanner(System.in);
-        System.out.println("Enter Player Number");
-        pNumber = s2.nextInt();
+// Scanner s2 = new Scanner(System.in);
+// System.out.println("Enter Player Number");
+// pNumber = s2.nextInt();
 
-        return pNumber;
-    }
+// return pNumber;
+// }
 
-}
+// }
 
-class Umpire {
-    int gGNumber;
-    int p1Number;
-    int p2Number;
-    int p3Number;
+// class Umpire {
+// int gGNumber;
+// int p1Number;
+// int p2Number;
+// int p3Number;
 
-    public void getNumberFromGuesser() {
+// public void getNumberFromGuesser() {
 
-        Guesser guesser = new Guesser();
-        gGNumber = guesser.getNumber();
-    }
+// Guesser guesser = new Guesser();
+// gGNumber = guesser.getNumber();
+// }
 
-    public void getNumberFromPlayer() {
+// public void getNumberFromPlayer() {
 
-        Player player1 = new Player();
-        Player player2 = new Player();
-        Player player3 = new Player();
+// Player player1 = new Player();
+// Player player2 = new Player();
+// Player player3 = new Player();
 
-        p1Number = player1.getNumber();
-        p2Number = player2.getNumber();
-        p3Number = player3.getNumber();
-    }
+// p1Number = player1.getNumber();
+// p2Number = player2.getNumber();
+// p3Number = player3.getNumber();
+// }
 
-    public void compare() {
+// public void compare() {
 
-        if ((gGNumber == p1Number) && (gGNumber == p2Number) && (gGNumber == p3Number))
-            System.out.println("Game tied all three players guessed correctly");
-        else if ((gGNumber == p1Number) && (gGNumber == p2Number))
-            System.out.println("Player1 and Player2 won the game");
-        else if ((gGNumber == p1Number) && (gGNumber == p3Number))
-            System.out.println("Player1 and Player3 won the game");
-        else if ((gGNumber == p2Number) && (gGNumber == p3Number))
-            System.out.println("Player2 and Player3 won the game");
-        else if (gGNumber == p1Number)
-            System.out.println("Player1 won the game");
-        else if (gGNumber == p2Number)
-            System.out.println("Player2 won the game");
-        else if (gGNumber == p3Number)
-            System.out.println("Player3 won the game");
-        else
-            System.out.println("Game lost! try again");
+// if ((gGNumber == p1Number) && (gGNumber == p2Number) && (gGNumber ==
+// p3Number))
+// System.out.println("Game tied all three players guessed correctly");
+// else if ((gGNumber == p1Number) && (gGNumber == p2Number))
+// System.out.println("Player1 and Player2 won the game");
+// else if ((gGNumber == p1Number) && (gGNumber == p3Number))
+// System.out.println("Player1 and Player3 won the game");
+// else if ((gGNumber == p2Number) && (gGNumber == p3Number))
+// System.out.println("Player2 and Player3 won the game");
+// else if (gGNumber == p1Number)
+// System.out.println("Player1 won the game");
+// else if (gGNumber == p2Number)
+// System.out.println("Player2 won the game");
+// else if (gGNumber == p3Number)
+// System.out.println("Player3 won the game");
+// else
+// System.out.println("Game lost! try again");
 
-    }
+// }
 
-}
+// }
 
-public class game {
-    public static void main(String[] args) {
+// public class game {
+// public static void main(String[] args) {
 
-        Umpire umpire = new Umpire();
-        umpire.getNumberFromGuesser();
-        umpire.getNumberFromPlayer();
-        umpire.compare();
-    }
-}
+// Umpire umpire = new Umpire();
+// umpire.getNumberFromGuesser();
+// umpire.getNumberFromPlayer();
+// umpire.compare();
+// }
+// }
