@@ -1,0 +1,60 @@
+Q - What is the default value of Array for different data types
+
+Answer to Question 1:
+The default value of array for different data types is null.
+
+
+Q - Can you pass the negative number in Array size
+
+Answer to Question 2:
+No, you cannot pass a negative number as the size of an array in Java.
+
+
+Q - Where does Array stored in JVM memory 
+
+Answer to Question 3:
+Arrays are stored in the heap memory in the Java Virtual Machine (JVM).
+
+
+Q - What are the disadvantages of Array
+
+Answer to Question 4:
+The main disadvantages of using an Array are its fixed length which makes it difficult to use if the size of data is unknown and the limited CPU operations they support.
+
+
+Q - What is an Anonymous Array in Java? Give an example
+
+Answer to Question 5:
+AnAnonymous Array in Java is an array declared without any name. It can be used when a method requires an array as an argument but we don't want to declare a separate array variable.
+Here's an example of Anonymous Array in Java:
+public static void main(String args[]) { 
+    // passing anonymous array to method  
+    performanceCalculator(new int[]{10,20,30}); 
+} 
+static void performanceCalculator(int arr[]) { 
+    // code to calculate the performance 
+    ...
+...
+
+
+Q - What are the different ways to traverse an Array in java
+
+Answer to Question 6:
+There are three ways to traverse an Array in Java:
+Using loops (i.e. for-loop, for-each loop etc.)
+Using Iterator
+Using built-in methods of Arrays class like sorted(), binarySearch() etc.
+
+
+Q - What is the difference between length and length() method. Give an examples
+
+Answer to Question 7:
+The length and length() method are two different functions when working with an array in Java.
+The length method is used to return the length or size of an array while the length() method is used to return the number of characters in a String.
+
+Here is an example of each:
+int[] myArray = new int[5];
+System.out.println(myArray.length); // prints 5 
+
+String myString = "Hello";
+System.out.println(myString.length()); // print
