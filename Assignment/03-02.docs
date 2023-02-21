@@ -1,0 +1,31 @@
+Q - What is a String in Java?
+
+A String in Java is an immutable object that stores a sequence of characters. It can be used to represent text and it is one of the most commonly used data types in Java.
+
+
+Q - Types of String in Java are?
+
+In Java, there are two types of Strings: Mutable and Immutable.
+Mutable strings are objects which allow their value to be modified after they are created. Examples include StringBuffer and StringBuilder.
+Immutable strings cannot be changed once they are created. An example is String.
+
+
+Q - In how many ways can you create string objects in Java?
+
+There are three different ways to create strings in Java: using a literal, using the new keyword, or using a constructor.
+Using a literal means you directly assign a string of characters to a string variable, like String mystring = "Hello World!".
+Using the ‘new’ keyword requires you to assign a value afterward, such as String mystring = new String();.
+Using a constructor requires you to specify a character array to instantiate the string, such as char[] charArray = { 'H', 'e', 'l', 'l', 'o' }; String mystring = new String(charArray);.
+
+
+Q - What is a string constant pool?
+The string constant pool is a special storage area in the Java virtual machine (JVM) that contains all the string literals and constants used in a program. When creating a string literal, the JVM will first try to look for this unique value in the string constant pool before allocating memory for a new string object. This helps to save memory as multiple strings with the same contents only need one instance in any class.
+
+
+Q - What do you mean by mutable and immutable objects?
+Mutable objects can have their state changed after being created; this means the value stored in the object can be manipulated through functions. Immutable objects, on the other hand, are objects whose values cannot be changed in anyway. Once they are created, the value stored inside them remains the same.
+
+
+Q - Where exastly is the string constant pool located in the memory?
+
+The string constant pool is located in a special heap area of the JVM called the Permanent Generation Memory Heap. Its memory location is relative to the JVM and changes depending on the underlying operating system.
