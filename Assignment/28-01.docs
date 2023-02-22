@@ -1,66 +1,87 @@
 Q - What are the conditional operators in java
 
-The conditional operators in Java are:
-if-then
-if-then-else
-switch-case
+Conditional Operators in Java
+Java provides several different kinds of conditional operators that help you to write programs to perform certain decisions. They are:
+&&: Logical and operator. Used to test for multiple conditions.
+||: Logical or operator. Used to test for one of many possible conditions.
+? : : The ternary operator. Used as a shortcut for an if/else statement.
+
 
 Q - What are the types of operators based on the number of operands
 
-Operators in Java can be classified based on the number of operands they take:
-Unary operators: take only one operand (e.g. increment operator ++)
-Binary operators: take two operands (e.g. addition operator +)
-Ternary operators: take three operands (e.g. conditional operator ?:)
+Types of Operators Based on the Number of Operands
+Operators in Java can be classified according to the number of operands they take. Unary operators take one operand, and binary operators take two operands.
+Unary Operator: An operator that takes and operates on a single operand. Examples include ++, --, !, -.
+Binary Operator: An operator that takes two operands. Examples include +, -, *, /, %
+
 
 Q - What is the use of switch case in java programming
 
-The switch-case statement in Java is used as an alternative to the if-then-else statement when a large number of choices are involved. It allows you to test a single expression against multiple values, and execute the corresponding block of code when a match is found.
+Use of switch case in Java Programming
+switch is a powerful construct similar to the if else construct in Java. It can be used to execute a set of statements based on the evaluation of a condition. When compared to if else it reduces the amount of code that needs to be written and helps in better readability of code.
+
 
 Q - What are the priority levels of arithmetic operation in java
 
-The priority levels of arithmetic operations in Java are determined by the operator precedence rules. The order of precedence is as follows, from highest to lowest:
-Parentheses ()
-Unary operators (e.g. ++, --)
-Multiplicative operators (*, /, %)
-Additive operators (+, -)
+The priority levels or precedence order of arithmetic operations in Java is as follows (from highest to lowest):
+Parentheses
+Exponents
+Multiplication and Division
+Addition and Subtraction
+
 
 Q - What are the conditional statements and use of conditional statements in java
 
-Conditional statements in Java allow you to make decisions based on conditions. The main types of conditional statements in Java are:
-if-then
-if-then-else
-switch-case
-Conditional statements are used in Java to execute different blocks of code based on different conditions.
+Conditional statements are used in programming to evaluate a condition and execute a set of instructions based on the result of the outcome of the evaluation. In Java, there are three types of conditional statements:
+If
+If-Else
+Switch
+The if statement is used to execute a set of instructions only when a specified expression evaluates to true. The if-else statement is used to execute either one set of statements or the other depending on the result of the evaluation of the expression. The switch statement is used to execute a set of instructions for a certain case depending on the result of the evaluation.
+
 
 Q - What is the syntax of if else statement
 
-The syntax of an if-else statement in Java is as follows:
-if (condition) {
-// code to be executed if the condition is true
+Syntax of if else Statement
+The syntax of the if else statement in Java is as follows:
+if(condition) { 
+    // Statements to execute when the condition is true 
+} 
+else { 
+    // Statements to execute when the condition is false 
 }
-else {
-// code to be executed if the condition is false
-}
+
 
 Q - What are the 3 types of iterative statements in java
 
-The three types of iterative statements in Java are:
-for loop
-while loop
-do-while loop
+The 3 types of iterative statements in Java are For loop, while loop, and do while loop.
+The for loop is used when we know how many times a code should be executed beforehand. It consists of three parameters: initializing variable, condition, and increment/decrement variable. The syntax for a for loop looks like this: for (initialization;condition;increment/decrement) { // code to be executed }.
+The while loop is used when the number of iterations is not known beforehand and it is dependent on a particular condition. The syntax for a while loop looks like this: while (condition) { // Code to be executed }.
+The do while loop works similarly to the while loop but executes at least one time even if the condition is false. The syntax for a do while loop looks like this: do { // code to be executed } while (condition) ;.
+
 
 Q - Write the difference between for loop and do while loop
 
-In a for loop, the loop control variable is initialized, tested, and updated before each iteration. The loop continues as long as the test condition is true.
-In a do-while loop, the loop body is executed at least once, and then the test condition is evaluated. The loop continues as long as the test condition is true.
+The difference between for loop and do while loop is that a for loop is used when you need to repeat the code a fixed number of times on the other hand, a do-while loop is used when you have to repeat the code an unknown number of times until a certain condition is met.
+The syntax of for loop is:
+for (initialisation; termination; increment/decrement) {
+   // Code block
+}
+Whereas, the syntax of do-while loop is:
+do {
+   // Code block
+} while (condition);
+In for loop, the initialization expression is executed first, then termination expression is evaluated and if it is true, code block is executed, else loop is terminated. The increment/decrement expression inside the loop happens at the end of each iteration.
+In do-while loop, code block is executed first, then condition is evaluated and if it is true then again code block is executed and it may continue iterating an unknown number of times until the exit condition becomes false.
+
 
 Q - Write a program to print numbers from 1 to 10
 
-Here is a program in Java to print the numbers from 1 to 10:
-public class Main {
-    public static void main(String[] args) {
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
-            }
-        }
-}
+Program to Print Numbers from 1 to 10
+Here is a program to print numbers from 1 to 10 using for loop:
+public class CountNumbers { 
+    public static void main(String[] args) { 
+        for(int i=1; i<=10; i++) { 
+            System.out.println(i); 
+        } 
+    } 
+} 
