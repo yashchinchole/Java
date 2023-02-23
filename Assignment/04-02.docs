@@ -1,0 +1,135 @@
+Q - Write a simple String program to take input from user
+
+import java.util.Scanner;
+
+public class UserInput {
+  public static void main(String[] args) {
+    // Create a Scanner object
+    Scanner scanner = new Scanner(System.in);
+
+    // Get the user's input
+    System.out.println("Please enter a string: ");
+    String userInput = scanner.nextLine();
+
+    // Print the user's input
+    System.out.println("You entered: " + userInput);
+  }
+}
+
+
+
+Q - How do you concatenate two strings in Java? Give an example
+
+In Java there are two ways to concatenate two strings.
+
+The first way is to use the + operator:
+
+String str1 = "Hello";
+String str2 = "World!";
+String joinStrings = str1 + str2;
+System.out.println(joinStrings);   // HelloWorld!
+
+The second way is to use the concat() method:
+
+String str1 = "Hello";
+String str2 = "World!";
+String joinStrings = str1.concat(str2);
+System.out.println(joinStrings);   // HelloWorld!
+
+
+
+Q - How do you find the length of a string in Java? Explain with an example
+
+Finding the length of a string in Java is very easy. All you need to do is use the length() method.
+Here's an example:
+
+String greeting = "Hello World!";
+int len = greeting.length();
+System.out.println("The length of '" + greeting + "' is " + len);
+// Prints out 'The length of 'Hello World!' is 12'
+
+
+
+Q - How do you compare two strings in Java? Give an axample
+
+Comparing Strings in Java
+Comparing strings in Java is done using the equals() and compareTo() methods. Both of these methods are used to compare two strings and determine if they are the same or not.
+
+.equals() Method
+The .equals() method compares two strings and returns a boolean value of true or false. This method checks for an exact match between two strings and does not take into consideration the "case" of each word.
+
+Example:
+String s1 = "Hello";
+String s2 = "hello";
+
+if (s1.equals(s2)) {
+   System.out.println("The two strings are equal!");
+} else {
+   System.out.println("The two strings are not equal!");
+}
+In the example above, the .equals() method returns a false since the strings do not match exactly.
+
+.compareTo() Method
+The .compareTo() method compares two strings and returns an integer value of either -1, 0, or 1. This method also takes into consideration the "case" of each string when comparing.
+
+Example:
+String s1 = "Hello";
+String s2 = "hello";
+
+if (s1.compareTo(s2) == 0) {
+   System.out.println("The two strings are equal!");
+} else if (s1.compareTo(s2) > 0) {
+   System.out.println("The first string is greater than the second string!");
+} else {
+   System.out.println("The second string is more than the first string!");
+}
+In the example above, the .compareTo() method returns a 1 since the first string is "greater" than the second string.
+
+
+
+Q - Write a program to find the length of the string "refrigerator"
+
+Here is a Java program to find the length of the string "refrigerator":
+
+public class StringLength 
+{
+    public static void main(String[] args) 
+    {
+        String str = "refrigerator";
+        int length = str.length();
+        System.out.println("Length of the given string " + str + " is: "+ length);
+    }
+}
+
+
+
+Q - Write a program to check if the letter 'e' is present in the word 'Umbrella'
+
+public class CheckChar {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        if (word.contains("e")) {
+            System.out.println("The letter 'e' is present in the word 'Umbrella'. ");
+        } else {
+            System.out.println("The letter 'e' is not present in the word 'Umbrella'. ");
+        } 
+    }
+}
+
+
+
+Q - Write a program to delete all consonants from the string "Hello, have a good day"
+
+public static void main(String[] args) {
+    String s = "Hello, have a good day";
+    String vowels = "aeiou";
+    StringBuffer result = new StringBuffer();
+    
+    for (char c: s.toCharArray()) {
+        if (!vowels.contains(Character.toLowerCase(c))){
+            result.append(c);
+        }
+    }
+ 
+    System.out.println(result);
+}
