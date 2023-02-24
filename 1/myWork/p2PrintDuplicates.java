@@ -1,4 +1,6 @@
-class A2 {
+// Print Duplicates Characters rom the String
+
+class p2 {
     public static void print(String str) {
 
         int[] count = new int[256];
@@ -14,10 +16,10 @@ class A2 {
     }
 }
 
-public class p2 {
+public class p2PrintDuplicates {
     public static void main(String[] args) {
 
-        A2.print("abbbccddeffgg");
+        p2.print("abbbccddeffgg");
 
     }
 }

@@ -1,4 +1,7 @@
-class A1 {
+// Remove Duplicates from a String
+
+class p1 {
+
     public String removeDuplicates(String s) {
 
         String result = "";
@@ -18,11 +21,11 @@ class A1 {
     }
 }
 
-public class p1 {
+public class p1RemoveDuplicates {
 
     public static void main(String[] args) {
         String s = "abbbccddeff";
-        A1 a = new A1();
+        p1 a = new p1();
         System.out.println(a.removeDuplicates(s));
     }
 

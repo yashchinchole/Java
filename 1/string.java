@@ -1,7 +1,3 @@
-
-//importing the Arrays library from java.util
-import java.util.Arrays;
-
 public class string {
     public static void main(String[] args) {
 
@@ -60,43 +56,5 @@ public class string {
         for (int i = sa.length - 1; i >= 0; i--)
             s13 += sa[i];
         System.out.println(s13);
-
-        // Code block to check if two strings are anagrams
-        String s14 = "Yash Prasad";
-        String s15 = "Pash Yrasad";
-        s14 = s14.replace(" ", "");
-        s15 = s15.replace(" ", "");
-        s14 = s14.toLowerCase();
-        s15 = s15.toLowerCase();
-        char a1[] = s14.toCharArray();
-        char a2[] = s15.toCharArray();
-
-        // sorting the character arrays in lexicographical order
-        Arrays.sort(a1);
-        Arrays.sort(a2);
-
-        // checking if the sorted character arrays are equal
-        System.out.println((Arrays.equals(a1, a2)) ? "Anagram" : "NOT Anagram");
-
-        String str = "the quick brown fox jumps over the lazy dog";
-        str = str.replace(" ", "").toLowerCase();
-        int flag = 1;
-
-        // create an array of alphabet
-        boolean[] array = new boolean[26];
-
-        // iterate through each character and set the value at corresponding index to
-        // true
-        for (int i = 0; i < str.length(); i++)
-            array[str.charAt(i) - 'a'] = true;
-
-        // iterate through the array and check if any value is false
-        for (int i = 0; i < 26; i++)
-            if (array[i] == false) {
-                flag = 0;
-                break;
-            }
-
-        System.out.println((flag == 1) ? "Pangram" : "NOT Pangram");
     }
 }
