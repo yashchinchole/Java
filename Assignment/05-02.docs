@@ -1,0 +1,234 @@
+Q - WAP (Write a Program) to remove Duplicates from a String. (Take any String example with dupicates character)
+
+class Ans {
+    public String removeDuplicates(String s) {
+        String result = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            boolean characterExist = false;
+            for (int j = 0; j < result.length(); j++) {
+                if (s.charAt(i) == result.charAt(j)) {
+                    characterExist = true;
+                    break;
+                }
+            }
+
+            if (!characterExist)
+                result += s.charAt(i);
+        }
+
+        return result;
+    }
+}
+
+public class java {
+    public static void main(String[] args) {
+
+        Ans a = new Ans();
+        System.out.println(a.removeDuplicates("abbccddeffgg"));
+
+    }
+}
+
+
+
+Q - WAP to print Duplicates characters from the String
+
+class Ans {
+    public static void print(String str) {
+
+        int[] count = new int[256];
+
+        for (int i = 0; i < str.length(); i++) {
+            int ch = str.charAt(i);
+            count[ch]++;
+
+            if (count[ch] > 1) {
+                System.out.print(str.charAt(i));
+            }
+        }
+    }
+}
+
+public class java {
+    public static void main(String[] args) {
+
+        Ans.print("abbbccddeffgg");
+
+    }
+}
+
+
+
+Q - WAP to check if “2772” as palindrome or not
+
+public class PalindromeChecker {
+ 
+    public static void main(String[] args) {
+        // Take an integer as input from the user
+        int number = 2772;
+ 
+        // Copy the original number into a temporal variable
+        int num = number;
+ 
+        // Reverse the number
+        int reverseNumber = 0;
+        while (num != 0) {
+            int remainder = num % 10;
+            reverseNumber = (reverseNumber * 10) + remainder;
+            num /= 10;
+        }
+ 
+        // Check if the reversed number is equal to the original number
+        if (number == reverseNumber) {
+            System.out.println("The number " + number + " is a palindrome.");
+        } else {
+            System.out.println("The number " + number + " is not a palindrome.");
+        }
+    }
+}
+
+
+
+Q - WAP to count the number of consonants, vowels, special characters n a String
+
+String input = "Hello World";
+int vowelsCount = 0, consonantsCount = 0, specialCharsCount = 0;
+
+for (int i = 0 ; i < input.length() ; i++) {
+    char ch = input.charAt(i);
+    if (Character.isLetter(ch)) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'|| 
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            vowelsCount++;
+        } else {
+            consonantsCount++;
+        }
+    } else {
+        specialCharsCount++;
+    }
+}
+
+System.out.println("Vowels: " + vowelsCount);
+System.out.println("Consonants: " + consonantsCount);
+System.out.println("Special Characters: " + specialCharsCount);	
+
+
+
+Q - WAP to implement Anagram Checking least inbuilt methods being used
+
+public static boolean isAnagram(String str1, String str2 ) 
+{  
+    // If strings are of different lengths then they can't be anagrams 
+    if (str1.length() != str2.length()) 
+        return false; 
+  
+    // Create two arrays of size equal to ASCII Characters 
+    int count1[] = new int[256]; 
+    int count2[] = new int[256]; 
+  
+    // Store the occurrence of each character in each string in respective arrays 
+    for (int i = 0; i < str1.length(); i++) { 
+        count1[str1.charAt(i)]++; 
+        count2[str2.charAt(i)]++; 
+    } 
+  
+    // Check both counts arrays 
+    for (int i = 0; i < 256; i++) 
+        if (count1[i] != count2[i]) 
+            return false; 
+  
+    return true; 
+} 
+
+
+
+Q - WAP to implement Pangram Checking with least inbuilt methods being used
+
+import java.util.HashSet; 
+
+public class Pangram {
+  
+    // Function to check weather a sentence is pangram  
+    static boolean isPangram(String str){ 
+          
+        // Create a set of alphabet character 
+        HashSet<Character> hs = new HashSet<>(); 
+  
+        // Iterate through all characters in the string 
+        for(int i=0; i<str.length(); i++){ 
+              
+            char x = Character.toUpperCase(str.charAt(i)); 
+              
+            if(x >= 'A' && x <= 'Z'){ 
+                hs.add(x);                 
+            } 
+        } 
+              
+        // If size of set is equal to 26 
+        // then the sentence is panagram else not. 
+        return (hs.size() == 26);  
+    } 
+      
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        String str1 = "We promptly judged antique ivory buckles for the next prize"; 
+        if (isPangram(str1) == true) 
+            System.out.println("Sentence 1 is a pangram."); 
+        else
+            System.out.println("Sentence 1 is not a pangram."); 
+  
+        String str2 = "Programs must be read from stored process to be believed"; 
+        if (isPangram(str2) == true) 
+            System.out.println("Sentence 2 is a pangram."); 
+        else
+            System.out.println("Sentence 2 is not a pangram."); 
+    } 
+} 
+
+
+
+Q - WAP to find if String contains all unique characters
+
+public static boolean hasUniqueCharacters(String str) 
+    { 
+        int checker = 0; 
+  
+        for (int i = 0; i < str.length(); i++) { 
+            int bitAtIndex = str.charAt(i) - 'a'; 
+            
+            if ((checker & (1 << bitAtIndex)) > 0){ 
+                return false; 
+            } 
+              
+            checker |= 1 << bitAtIndex; 
+        } 
+        return true; 
+    } 
+
+
+
+Q - WAP to find the maximum occurring character in a String
+
+String str = "Hello World!";
+// create a hashmap initialized to 0
+HashMap<Character, Integer> map = new HashMap<>(); 
+ 
+for (char ch : str.toCharArray()) { 
+    // increase the count of character in map 
+    if (map.containsKey(ch)) { 
+        map.put(ch, map.get(ch) + 1); 
+    } else{
+        map.put(ch, 1);
+    } 
+} 
+  
+// initialise max value variable with first element 
+int maxValueInMap = (Collections.max(map.values()));  
+// loop through the map to find key with max value 
+for (char ch: map.keySet()) { 
+    if (map.get(ch)== maxValueInMap) { 
+        System.out.println("The max occurring character is: "+ ch);  
+    }
+} 
