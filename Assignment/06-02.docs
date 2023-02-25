@@ -1,0 +1,71 @@
+Q - What is Mutable String in Java Explain with an example
+
+Mutable strings, in Java, are strings that can be modified by methods like replace(); this is different from the standard string type, which is an immutable object.
+
+An example of a mutable String would be:
+StringBuilder str = new StringBuilder("Hello, World!");
+str.replace(0, 5, "Goodbye"); // Replace "Hello" with "Goodbye"
+System.out.println(str); // Outputs: "Goodbye, World!"
+
+In the above example, we create a new StringBuilder object and assign it to the str variable. We then use the replace() method to replace the first five characters (starting at index zero) with the word "Goodbye". Finally, we output the mutated String to the console.
+
+
+
+Q - WAP to reverse a String in Java
+Input : “PW SKILLS”
+Output : “SLLIKSPW”
+
+public class java {
+    public static void main(String[] args) {
+        String input = "PW SKILLS";
+        StringBuffer output = new StringBuffer();
+
+        String s[] = input.split(" ");
+        output.append(s[1]).reverse().append(s[0]);
+        System.out.println(output);
+    }
+}
+
+
+
+3. WAP to reverse a sentence while preserving the position
+Input :  Think Twice
+Output : “kniht eciwt”
+
+public class java {
+    public static void main(String[] args) {
+        String input = "Think Twice";
+        input = input.toLowerCase();
+        StringBuffer output1 = new StringBuffer();
+        StringBuffer output2 = new StringBuffer();
+
+        String s[] = input.split(" ");
+        output1.append(s[0]).reverse();
+        output2.append(s[1]).reverse();
+
+        System.out.println(output1 + " " + output2);
+    }
+}
+
+
+
+Q - WAP to sort a String Alphabetically
+
+public class SortString {
+
+    public static void main(String[] args) {
+        // Create a String 
+        String inputString = "CodeGym"; 
+
+        // Convert it into character array 
+        char[] charArray = inputString.toCharArray(); 
+
+        // Sorting the char array 
+        Arrays.sort(charArray); 
+
+        // Now, print the sorted char array 
+        for (char c : charArray) {
+            System.out.println(c); 
+        }
+    }
+}
