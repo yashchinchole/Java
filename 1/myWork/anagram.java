@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class p3Anagram {
+public class anagram {
     public static void main(String[] args) {
 
         String s14 = "Yash Prasad";

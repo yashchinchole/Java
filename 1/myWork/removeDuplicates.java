@@ -21,7 +21,7 @@ class p1 {
     }
 }
 
-public class p1RemoveDuplicates {
+public class removeDuplicates {
 
     public static void main(String[] args) {
         String s = "abbbccddeff";

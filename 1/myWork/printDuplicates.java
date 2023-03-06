@@ -16,7 +16,7 @@ class p2 {
     }
 }
 
-public class p2PrintDuplicates {
+public class printDuplicates {
     public static void main(String[] args) {
 
         p2.print("abbbccddeffgg");

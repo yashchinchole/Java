@@ -1,4 +1,4 @@
-public class p5ImmutableString {
+public class immutableString {
     public static void main(String[] args) {
 
         String s1 = "Git"; // Create an immutable string

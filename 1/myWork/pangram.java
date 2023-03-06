@@ -1,6 +1,6 @@
 // Pangram
 
-public class p4Pangram {
+public class pangram {
     public static void main(String[] args) {
 
         String str = "the quick brown fox jumps over the lazy dog";

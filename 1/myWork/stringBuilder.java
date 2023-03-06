@@ -1,4 +1,4 @@
-public class p6StringBuilder {
+public class stringBuilder {
     public static void main(String[] args) {
 
         StringBuilder s1 = new StringBuilder();
