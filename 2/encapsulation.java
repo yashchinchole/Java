@@ -1,4 +1,4 @@
-class Student {
+class Studentb {
     private int age;
     private String name;
 
@@ -22,14 +22,14 @@ class Student {
 public class encapsulation {
     public static void main(String[] args) {
 
-        Student student1 = new Student();
+        Studentb student1 = new Studentb();
         student1.setAge(18);
         student1.setName("YASH");
         int a1 = student1.getAge();
         String n1 = student1.getName();
         System.out.println(a1 + " " + n1);
 
-        Student student2 = new Student();
+        Studentb student2 = new Studentb();
         student2.setAge(22);
         student2.setName("NotesHub");
         int a2 = student2.getAge();

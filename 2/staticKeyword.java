@@ -1,4 +1,4 @@
-class Student {
+class Studenta {
 
     int age = 5; // instance variable, non - static variable
     static String school; // non - instance variable, static variable
@@ -26,15 +26,15 @@ public class staticKeyword {
 
         System.out.println("in main method");
 
-        Student obj = new Student();
+        Studenta obj = new Studenta();
 
-        Student.study();
+        Studenta.study();
         obj.age = 19;
         // obj.school = "PWSkills";
-        Student.school = "PWSkills";
+        Studenta.school = "PWSkills";
 
-        Student obj1 = new Student();
-        System.out.println(Student.school);
+        Studenta obj1 = new Studenta();
+        System.out.println(Studenta.school);
 
         obj.show(); // in show 19 PWSkills
         obj1.show(); // in show 0 ?
