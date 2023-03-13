@@ -1,0 +1,53 @@
+Q - What do you mean by Multithreading. Why it is important
+
+Multithreading allows multiple threads to run concurrently within a single program. A thread is a lightweight process that can run independently and perform tasks simultaneously with other threads in the same program.
+
+
+
+Q - What are the benefits of using Multithreading
+
+Multithreading offers several benefits, including:
+
+Increased Performance - By having multiple threads running simultaneously, a program can make better use of system resources, increasing its overall performance.
+
+Responsiveness - When a program has multiple threads, it can stay responsive to user input while performing time-consuming tasks in the background.
+
+Resource Sharing - Threads can share resources, such as memory, between each other, reducing the overall memory consumption of a program.
+
+
+
+Q - What is thread in Java
+
+In Java, a thread is an object of the java.lang.Thread class that represents an independent path of execution through a program.
+
+
+
+Q - What are the two ways of implementing thread in Java
+
+Extend the Thread Class: This method involves creating a class that extends the Thread class and overriding the run() method. When the start() method is called on an instance of this class, a new thread will be created and executed.
+
+Implement the Runnable Interface: This method involves creating a class that implements the Runnable interface and overriding the run() method. An instance of the Thread class is then created, passing the Runnable object into its constructor. When the start() method is subsequently called on the Thread instance, a new thread will be created and executed.
+
+
+
+Q - What is the difference between thread and process
+
+A process is an instance of a program that has its own memory space and resources, whereas a thread is a subset of a process that runs concurrently with other threads within the same process. Multiple threads can exist within a single process, but multiple processes cannot exist within a single thread.
+
+
+
+Q - How can we create daemon threads
+
+Creating Daemon Thread in Java
+To create a daemon thread in Java, we can use the setDaemon(true) method on a Thread object before starting it. Daemon threads are used to provide services to other threads and terminate automatically when all non-daemon threads have finished executing.
+
+
+
+Q - What are the wait() and sleep() methodts
+
+wait() and sleep() Methods
+wait() and sleep() methods in Java are used for pausing the execution of a thread.
+
+The wait() method is used to temporarily release the lock on an object, allowing other threads to access it, until the thread is notified. It must be called from within a synchronized block or method.
+
+The sleep() method, on the other hand, simply pauses the execution of the current thread for the specified amount of time, without releasing any locks.
