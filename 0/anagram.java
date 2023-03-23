@@ -5,14 +5,14 @@ import java.util.Arrays;
 public class anagram {
     public static void main(String[] args) {
 
-        String s14 = "Yash Prasad";
-        String s15 = "Pash Yrasad";
-        s14 = s14.replace(" ", "");
-        s15 = s15.replace(" ", "");
-        s14 = s14.toLowerCase();
-        s15 = s15.toLowerCase();
-        char a1[] = s14.toCharArray();
-        char a2[] = s15.toCharArray();
+        String s1 = "Yash Prasad";
+        String s2 = "Pash Yrasad";
+        s1 = s1.replace(" ", "");
+        s2 = s2.replace(" ", "");
+        s1 = s1.toLowerCase();
+        s2 = s2.toLowerCase();
+        char a1[] = s1.toCharArray();
+        char a2[] = s2.toCharArray();
 
         // sorting the character arrays in lexicographical order
         Arrays.sort(a1);
