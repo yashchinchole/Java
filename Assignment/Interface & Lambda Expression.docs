@@ -1,0 +1,55 @@
+Q - What is an interface in Java
+
+An interface is a collection of abstract methods, which means the methods declared in an interface do not contain any implementation like regular methods. When a class implements an interface, it must implement all methods defined in that interface. An Interface can also have default and static methods with implementation.
+
+
+
+Q - Which modifiers are allowed for methods in an Interface? Explain with an example
+
+In Java, only public and default(introduced in Java 8) modifiers are allowed for methods in an Interface.
+
+public interface Vehicle {
+    public void start();
+    default void stop() {
+        System.out.println("Vehicle Stopped");
+    }
+}
+
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car Started");
+    }
+    // stop method is inherited from Vehicle interface
+}
+
+
+
+Q - What is the use of interface in Java? Or, why do we use an interface in Java
+
+There are several reasons to use interfaces in Java, some of which are:
+
+It helps achieve abstraction by separating the declaration of class methods from its implementation.
+It provides a way for multiple inheritance.
+It establishes a contract between different modules of the software application.
+It allows for declarative programming through annotations, which makes code more maintainable.
+
+
+
+Q - What is the difference between abstract class and interface in Java?
+
+In Java, abstract classes and interfaces are used to provide abstraction, but they have some fundamental differences. Here they are as follows:
+
+Abstract Class:
+An abstract class is a class that cannot be instantiated, which means we cannot create objects of an abstract class directly.
+An abstract class can have both abstract and non-abstract methods.
+Abstract classes can have constructors, instance variables, and static methods as well.
+In an abstract class, the keyword "abstract" is used to declare a method that has no implementation, and it must be overridden by the subclass.
+
+Interface:
+Unlike abstract classes, an interface cannot contain any implementation for the methods declared inside it.
+All interface methods are implicitly abstract and public (if not explicitly mentioned).
+Interfaces cannot include constructors or instance variables, but can have constants using the “final” keyword.
+When implementing an interface in the class, all of its methods must be overridden.
+A class can implement multiple interfaces at once by using the keyword “implements.”
+
+In summary, if we need to provide a partial implementation to reuse across subclasses, we should use Abstract classes, while if we want a contract that enforces certain behavior to fulfill, we should use Interfaces.
