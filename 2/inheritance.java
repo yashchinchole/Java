@@ -8,8 +8,8 @@ class Child extends Father {
     }
 }
 
-class Daughter extends Father {
-}
+// class Daughter extends Father {
+// }
 
 class GrandChild extends Child {
     void display() {
