@@ -1,0 +1,60 @@
+Q - What is the Collection framework in Java
+
+**Collection framework in Java**
+The Collection framework in Java is a set of classes and interfaces that provide us with different types of data structures to store and manipulate groups of objects. It provides an architecture to represent and manipulate a group of objects.
+
+
+
+Q - What is the difference between ArrayList and LinkedList
+
+**Difference between ArrayList and LinkedList**
+ArrayList and LinkedList both are the implementations of the List interface, but they differ in their internal implementation. 
+- ArrayList is implemented using a dynamic array, whereas LinkedList is implemented using a doubly linked list.
+- The time complexity for accessing an element in ArrayList is O(1), while for LinkedList it is O(n) since we need to traverse the list till we reach the element.
+- The time complexity for adding or removing elements from the end of ArrayList is O(1), while for LinkedList it is also O(1). However, for adding or removing elements at a specific index, ArrayList takes O(n), whereas LinkedList takes O(1).
+
+
+
+Q - What is the difference between Iterator and ListIterator
+
+**Difference between Iterator and ListIterator**
+Both Iterator and ListIterator are interfaces used to iterate over the elements of a collection, but there are a few differences:
+- Iterator can be used to iterate only in forward direction, whereas ListIterator can be used to iterate in forward as well as backward directions.
+- ListIterator provides extra functionality like adding an element while iterating or getting the previous element.
+
+
+
+Q - What is the difference between Iterator and Enumeration
+
+**Difference between Iterator and Enumeration**
+Enumeration is a legacy interface used to iterate over elements of legacy collections like Vector, Hashtable etc. Iterator is an enhanced version of the Enumeration interface and can be used to iterate over elements of any collection. 
+- Enumeration can be used only for reading the elements, whereas Iterator can be used for both reading and removing elements.
+- Enumeration has limited functionality, for example, it does not have a remove() method, which is present in the Iterator interface.
+
+
+
+Q - What is the difference between List and Set
+
+**Difference between List and Set**
+List and Set are both interfaces representing collections of objects, but they differ in some characteristics:
+- List allows duplicate elements, whereas Set does not allow duplicate elements.
+- List maintains the order of insertion of elements, whereas Set does not maintain any order.
+
+
+
+Q - What is the difference between HashSet and TreeSet
+
+**Difference between HashSet and TreeSet**
+HashSet and TreeSet both are implementations of the Set interface, but they differ in their internal implementation:
+- HashSet is implemented using a hash table, which makes it faster in adding, removing and checking if an element exists or not. However, it does not maintain any order of elements.
+- TreeSet is implemented using a balanced tree structure, which makes it slower than HashSet for adding, removing, and searching elements. However, it maintains the order of elements based on their natural ordering (or a Comparator provided at initialization time).
+
+
+
+Q - What is the difference between Array and ArrayList
+
+**Difference between Array and ArrayList**
+Array is a fixed-size data structure where the size needs to be declared at initialization time. Once an array is created, its size cannot be changed. On the other hand, ArrayList is a dynamic data structure that can change its size at runtime.
+- Arrays can store only homogeneous data types (same data type), while ArrayList can store different data types.
+- Arrays are accessed by index, whereas ArrayList uses methods like get() and set() to access the elements.
+- Arrays can be multidimensional, whereas ArrayList is always a one-dimensional list.
