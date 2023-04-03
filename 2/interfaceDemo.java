@@ -1,32 +1,32 @@
-interface A {
-    int age = 20;
+// interface base {
+//     int age = 20;
 
-    void show();
-}
+//     void show();
+// }
 
-interface B {
-    void display();
-}
+// interface derived {
+//     void display();
+// }
 
-class child implements A, B {
-    public void show() {
-        System.out.println("SHOW");
-    }
+// class child implements base, derived {
+//     public void show() {
+//         System.out.println("SHOW");
+//     }
 
-    public void display() {
-        System.out.println("DISPLAY");
-    }
-}
+//     public void display() {
+//         System.out.println("DISPLbaseY");
+//     }
+// }
 
-public class interfaceDemo {
-    public static void main(String[] args) {
-        System.out.println(A.age);
+// public class interfaceDemo {
+//     public static void main(String[] args) {
+//         System.out.println(base.age);
 
-        A o = new child();
-        o.show();
+//         base o = new child();
+//         o.show();
 
-        child obj = new child();
-        obj.show();
-        obj.display();
-    }
-}
+//         child obj = new child();
+//         obj.show();
+//         obj.display();
+//     }
+// }
