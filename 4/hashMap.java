@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.Map.Entry;
 
 public class hashMap {
     public static void main(String[] args) {
@@ -19,13 +20,23 @@ public class hashMap {
         Iterator it = set.iterator();
 
         while (it.hasNext()) {
-            System.out.println(it.next());
+            Integer i = (Integer) it.next();
+            System.out.println(i);
         }
 
         Collection values = map.values();
         Iterator it2 = values.iterator();
         while (it2.hasNext()) {
-            System.out.println(it2.next());
+            String i = (String) it.next();
+            System.out.println(i);
+        }
+
+        Set entrySet = map.entrySet();
+        Iterator itr3 = entrySet.iterator();
+
+        while (itr3.hasNext()) {
+            Map.Entry data = (Entry) itr3.next();
+            System.out.println(data.getKey() + " : " + data.getValue());
         }
     }
 }
