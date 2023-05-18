@@ -1,0 +1,65 @@
+Q. As a Human it is very common to face medical emergencies in life. Create a java application to facilitate the functionality for the patient to book an appointment with a doctor and maintain details about patient and hospital. Doctor to maintain all patient information. (The agenda of application is to replicate Hospital management and you can implement your own idea in your own way).
+
+public class Patient {
+    private String name;
+    private int age;
+    private String contactNumber;
+    // add more attributes as needed
+ 
+    public Patient(String name, int age, String contactNumber) {
+        this.name = name;
+        this.age = age;
+        this.contactNumber = contactNumber;
+        // initialize more attributes as needed
+    }
+ 
+    // add getter and setter methods for each attribute
+}
+public class Doctor {
+    private String name;
+    private String specialization;
+    // add more attributes as needed
+ 
+    public Doctor(String name, String specialization) {
+        this.name = name;
+        this.specialization = specialization;
+        // initialize more attributes as needed
+    }
+ 
+    // add getter and setter methods for each attribute
+}
+public class Hospital {
+    private String name;
+    private List<Patient> patients;
+    private List<Doctor> doctors;
+    // add more attributes as needed
+ 
+    public Hospital(String name) {
+        this.name = name;
+        patients = new ArrayList<>();
+        doctors = new ArrayList<>();
+        // initialize more attributes as needed
+    }
+ 
+    public void addPatient(Patient patient) {
+        patients.add(patient);
+    }
+ 
+    public void addDoctor(Doctor doctor) {
+        doctors.add(doctor);
+    }
+ 
+    // add getter and setter methods for each attribute
+}
+public class Main {
+    public static void main(String[] args) {
+        Hospital hospital = new Hospital("ABC Hospital");
+        Patient patient = new Patient("John", 30, "1234567890");
+        Doctor doctor = new Doctor("Dr. Smith", "Cardiology");
+        hospital.addPatient(patient);
+        hospital.addDoctor(doctor);
+ 
+        // now we can perform various operations such as booking an appointment for the patient
+        // or displaying all patients, doctors or appointments
+    }
+}
