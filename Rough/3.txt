@@ -1,0 +1,113 @@
+section .data
+
+    msg db "Count of Positive and Negative Numbers"
+    msgLen equ $-msg
+    
+    array dq 18h, -25h, -26h, 37h, 41h
+    n equ 5
+    
+    pmsg db 10,  "Positive Count : "
+    pmsgLen equ $-pmsg
+    
+    nmsg db 10,  "Negative Count : "
+    nmsgLen equ $-nmsg
+    
+; -----------------------------------------------------------
+
+section .bss
+
+    charAns resb 16
+    
+    pCount resq 1
+    nCount resq 1
+    
+; -----------------------------------------------------------
+
+%macro print 2
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, %1
+    mov rdx, %2
+    syscall
+%endmacro
+
+%macro exit 0
+    mov rax, 60
+    mov rdi, 0
+    syscall
+%endmacro
+    
+; -----------------------------------------------------------
+
+section .text
+
+    global _start
+    
+_start:
+
+    print msg, msgLen
+
+    mov rsi, array
+    mov rcx, n
+    
+    mov rbx, 0
+    mov rdx, 0
+    
+    count:
+        mov rax, [rsi]
+        shl rax, 1
+        jc negative
+        
+        positive:
+            inc rbx
+            jmp next
+        
+        negative:
+            inc rdx
+            
+        next:
+            add rsi, 8
+            dec rcx
+            jnz count
+    
+    mov [pCount], rbx
+    mov [nCount], rdx
+            
+    print pmsg, pmsgLen
+    mov rax, [pCount]
+    call display
+            
+    print nmsg, nmsgLen
+    mov rax, [nCount]
+    call display
+    
+    exit
+            
+; -----------------------------------------------------------
+
+display:
+    
+    mov rbx, 16
+    mov rcx, 2
+    mov rsi, charAns + 1
+    
+    back:
+        mov rdx, 0
+        div rbx
+        cmp dl, 09h
+        jbe add30
+        add dl, 07h
+        
+        add30:
+            add dl, 30h
+        
+        mov [rsi], dl
+        dec rsi
+        dec rcx
+        jnz back
+    
+    print charAns, 2
+    
+ret
+
+; -----------------------------------------------------------
