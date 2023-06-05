@@ -69,20 +69,20 @@ section .text
     SMSW [MSW]
     mov rax, [MSW]
     ror rax, 1
-    jc pmode 
+    jc pMode 
     print rmsg, rmsgLen
     jmp next
-    pmode:
-    print pmsg, pmsgLen
+    pMode:
+        print pmsg, pmsgLen
     next:
-    SGDT [GDTR]
-    SIDT [IDTR]
-    SLDT [LDTR]
-    STR [TR]
-    SMSW [MSW]
+        SGDT [GDTR]
+        SIDT [IDTR]
+        SLDT [LDTR]
+        STR [TR]
+        SMSW [MSW]
 
-    print gmsg,gmsgLen
-    mov ax, [GDTR+4]
+    print gmsg, gmsgLen
+    mov ax, [GDTR + 4]
     call display
 
     mov ax, [GDTR + 2]
@@ -104,7 +104,6 @@ section .text
 
     mov ax, [IDTR + 0]
     call display
-
 
     print lmsg, lmsgLen
     mov ax, [LDTR]
